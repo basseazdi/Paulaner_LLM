@@ -1,0 +1,60 @@
+{
+  "description": "Summer Cashback 2025",
+  "campaign_typology": "Promoción Tarjeta",
+  "customer_segmentation": null,                       /* null → abierto */
+  "commercial_activity": {
+    "start_date": "2025-07-15",
+    "end_date":   "2025-08-31",
+    "coupons": [
+      {
+        "coupon_code":   "SUMMER25",
+        "discount_type": "Cashback",
+        "value":         25,
+        "currency":      "EUR"
+      }
+    ]
+  },
+
+  "success_criteria": [
+    {
+      "metric_name": "net_cashback",
+      "function":    "sum",
+      "min_amount":  500000,                           /* €500 k total payout */
+      "time_window": "campaign_lifetime"
+    },
+    {
+      "metric_name": "enrolled_customers",
+      "function":    "count",
+      "min_amount":  10000,                            /* at least 10 k users */
+      "time_window": "campaign_lifetime"
+    }
+  ],
+
+  "metrics": [
+    {
+      "metric_name": "transactions",
+      "function":    "count",
+      "time_window": "campaign_lifetime"
+    },
+    {
+      "metric_name": "avg_transaction_value",
+      "function":    "average",
+      "time_window": "campaign_lifetime"
+    }
+  ],
+
+  "briefing accion comercial": {
+    "informacion general": {
+      "Nombre de la acción Comercial": "Summer Cashback 2025",
+      "Producto":                     "Tarjeta Débito",
+      "Abierto/Segmentada":           "Abierto",
+      "Metadata Adobe Campaign": {
+        "campaign_id": "OB2025SUMCB",
+        "program":     "CBK"
+      },
+      "Tipología de campaña":         "Promoción Tarjeta",
+      "Fecha de inicio":              "2025-07-15",
+      "Fecha de fin":                 "2025-08-31"
+    }
+  }
+}
