@@ -137,6 +137,7 @@ for excel_file in all_briefings:
         excels_descriptions[excel_file] = action_name[start:].strip().replace("/", "").replace("  ", " ")
     else:
         excels_descriptions[excel_file] = "Invalid description"
+        print("BAD EXCEL DESCRIPTION")
 
 print(len(excels_descriptions),"briefing files gathered")
 
