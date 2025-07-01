@@ -31,7 +31,7 @@ print(project_dir)
 jsons_path = os.path.join(project_dir, "reports/jsons")
 briefings_path = os.path.join(project_dir, "reports/briefing")
 print(briefings_path)
-shots_path = os.path.join(project_dir, "reports/Shots")
+shots_path = os.path.join(project_dir, "reports/shots")
 
 s3_session = boto3.Session(profile_name="ESP-DEV")
 s3_client = s3_session.client("bedrock-runtime", region_name="us-east-1")
